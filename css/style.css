@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,11 +21,11 @@ ul {
 
 .header {
   width: 100%;
-  height: 10rem;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  gap: 40rem; }
+  align-items: center; }
   .header__nav__boton--responsive {
     display: none; }
   .header__imagen__hamburguesa {
@@ -50,7 +51,7 @@ ul {
       transition: 0.3s; }
     .header__nav__lista a {
       text-decoration: none;
-      color: #04162F; }
+      color: #072753; }
     .header__nav__lista .header__nav__hover:hover {
       transform: scale(1.2); }
   .header__nav__lista--color :first-child {
@@ -73,6 +74,34 @@ ul {
     cursor: pointer; }
     .header__nav__boton:active {
       transform: scale(0.9); }
+  .header__portada {
+    width: 100%;
+    height: 40rem;
+    background-color: #FFEFF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black; }
+  .header__portada__contenedor--imagenes {
+    border: solid black;
+    width: 59%;
+    display: flex;
+    justify-content: space-between; }
+  .header__portada__imagenes {
+    position: relative; }
+  .header__portada__imagenes--nube1 {
+    position: absolute;
+    left: 10px; }
+  .header__portada__imagenes--nube2 {
+    position: absolute;
+    left: 95px;
+    bottom: 15px;
+    transform: rotate(-5deg); }
+  .header__portada__titulo--h1 {
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 5rem;
+    color: #00134e; }
 
 @media (max-width: 768px) {
   .header {
@@ -128,8 +157,3 @@ ul {
   .header__logo__contenedor {
     display: flex;
     justify-content: flex-end; } }
-
-.main__contenedor {
-  width: 100%;
-  height: 30rem;
-  background-color: #FFEFF8; }
